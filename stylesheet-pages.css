@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 14px;
+  background-color: rgb(249, 246, 251);
+  ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+p {
+  padding: 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: purple;
+}
+
+a:hover {}
+
+.skirt {
+  position: fixed;
+  right: 40px;
+  top: 180px;
+}
+
+.water-table {
+  position: fixed;
+  right: 230px;
+  top: 100px;
+  align-items: center;
+}
+
+.rocking-chair {
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+.nails {
+  margin-top: 8vh;
+  margin-left: 5%;
+}
+
+.billboard {
+  margin-top: 20vh;
+  margin-left: 2vw;
+}

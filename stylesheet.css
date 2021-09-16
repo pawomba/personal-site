@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 14px;
+  background-image: url('background-outline.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+p {
+  padding: 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: purple;
+}
+
+a:hover {
+}
+
+/* containers */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+.total {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* bench */
+
+.Bench {
+  width: 20vw;
+  position: absolute;
+  left: 75vw;
+  top: 38vh;
+}
+
+.Bench:hover {
+  transform: skewY(3deg);
+  transition: .5s ease-in, .5s ease-out;
+}
+
+/* billboard */
+
+.billboard {
+  width: 25vw;
+  position: absolute;
+  top: 60vh;
+  left: 5vw;
+}
+
+.billboard:hover {
+  transform: skewX(-2deg);
+  transition: .5s ease;
+}
+
+/* broom */
+
+.broom {
+  width: 20vw;
+  position: absolute;
+  top: 70vh;
+  left: 75vw;
+}
+
+.broom:hover {
+  transform: skewY(6deg);
+  transition: .5s ease;
+}
+
+/* maracas  */
+
+.maracas {
+  width: 9vw;
+  position: absolute;
+  top: 60vh;
+  left: 65vw;
+}
+
+.maracas:hover {
+  transform: scale(1.1,1.1);
+  transition: .5s ease;
+}
+
+/* Nails */
+
+.nails {
+  width: 11vw;
+  position: absolute;
+  top: 8.8vh;
+  left: 56.5vw;
+}
+
+.nails:hover {
+  transform: translateY(-6px);
+  transition: .5s ease;
+}
+
+/* rocking */
+
+.rocking {
+  width: 15vw;
+  position: absolute;
+  top: 55vh;
+  left: 43.5vw;
+}
+
+.rocking:hover {
+  transform: rotate(-4deg);
+  transition: .5s ease;
+}
+
+/* skirt */
+
+.skirt {
+  width: 7vw;
+  position: absolute;
+  left: 14vw;
+  top: 5vh;
+}
+
+.skirt:hover {
+  transform: skewX(2);
+  transition: .5s ease;
+}
+
+/* water */
+
+.water {
+  width: 16vw;
+  position: absolute;
+  left: 30vw;
+  top: 30vh;
+}
+
+.water:hover {
+  transform: scale(1.1,1.1);
+  transition: .5s ease;
+}
