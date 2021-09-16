@@ -11,6 +11,14 @@ body {
   background-size: 100% 100%;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: none;
+    background-color: rgb(249, 246, 251);
+    
+  }
+}
+
 p {
   padding: 1em;
 }
