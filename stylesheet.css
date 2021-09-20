@@ -15,7 +15,7 @@ body {
   body {
     background-image: none;
     background-color: rgb(249, 246, 251);
-    
+
   }
 }
 
@@ -148,7 +148,7 @@ body {
 }
 
 .skirt:hover {
-  transform: skewX(2);
+  transform: translateY(10px);
   transition: .5s ease;
 }
 
