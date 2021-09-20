@@ -11,14 +11,6 @@ body {
   background-size: 100% 100%;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-image: none;
-    background-color: rgb(249, 246, 251);
-
-  }
-}
-
 p {
   padding: 1em;
 }
@@ -164,4 +156,31 @@ body {
 .water:hover {
   transform: scale(1.1,1.1);
   transition: .5s ease;
+}
+
+@media screen and (max-width:600px) {
+  html {
+    font-size:150%;
+  }
+
+  body {
+    background-image: none;
+    background-color: rgb(249, 246, 251);
+  }
+
+  .container {
+    flex-direction:column;
+  }
+
+  .bench {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+@media screen and (max-width:600px) {
+  html{
+    font-size:200%;
+  }
+
 }
