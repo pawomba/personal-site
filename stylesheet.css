@@ -17,7 +17,7 @@ p {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 h1 {}
@@ -174,17 +174,41 @@ body {
   }
 
   .container {
+    margin: 30px;
+    display: flex;
+    gap: 30px;
     flex-direction: column;
+    align-items: center;
+    height: 80vh;
   }
 
   .bench {
     width: 100%;
     margin: 5px 0;
   }
-}
 
-@media screen and (max-width:600px) {
-  html {
-    font-size: 200%;
+  .broom, .water, .billboard, .Bench {
+    position: static;
+    width: 60vw;
+  }
+
+  .maracas, .folder {
+    position: static;
+    width:  40vw;
+  }
+
+  .skirt{
+    position: static;
+    width:  25vw;
+  }
+
+  .rocking{
+    position: static;
+    width:  45vw;
+  }
+
+  .nails{
+    position: static;
+    width:  35vw;
   }
 }

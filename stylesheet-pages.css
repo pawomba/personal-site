@@ -30,6 +30,21 @@ a:link, a:visited {
 
 a:hover {}
 
+.row {
+  height: 30%;
+  padding: 10px 10px 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.row-item {
+
+}
+
+
+
+
 .skirt {
   position: fixed;
   right: 40px;
