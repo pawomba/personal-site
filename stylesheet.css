@@ -203,7 +203,6 @@ body {
 }
 
 /* mobile medium  */
-
 @media screen and (max-width:1370px) {
   body {
     background-image: none;
@@ -213,7 +212,6 @@ body {
 }
 
 /* mobile small */
-
 @media screen and (max-width:600px) {
   html {
     font-size: 150%;
@@ -271,16 +269,10 @@ body {
 
   .spiral {
     position: static;
-    width: 15vw;
+    width: 10vw;
   }
-
 }
 }
-
-
-
-
-
 
 /* library cart things
 
@@ -475,10 +467,10 @@ body {
   padding: 10px;
   display: flex;
   flex-direction: ; */
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  /* flex-wrap: wrap;
+height: 100vh;
+display: flex;
+flex-direction: column;
+/* flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   align-content: center; */
@@ -514,4 +506,6 @@ body {
 .column-item {
   height: 24%;
   /* background: rgb(137, 154, 94); */
-} */
+}
+
+*/

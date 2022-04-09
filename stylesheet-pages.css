@@ -66,12 +66,12 @@ body#bench main {
 }
 
 #billboard img {
-  margin: 20px;
+  margin: 0px;
   vertical-align: top;
 }
 
 body#billboard main {
-  margin: 20px;
+  margin: 0px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
@@ -135,14 +135,10 @@ body#maracas main {
 }
 
 body#nails main {
-  width: 800px;
+  width: auto;
   margin: auto;
-  margin-top: 30px;
-  /* display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-areas:
-    "n1 ."
-    "n2 .";  */
+  display: grid;
+  justify-items: center;
 }
 
 .n1 {
@@ -264,13 +260,16 @@ body#spiral main {
 
 
 /* media */
+
+
  @media only screen and (max-width: 600px) {
 
-   #library {
+   /* #library {
      display: block;
-   }
+   } */
 
-   .row-item l1 {
-     display: block;
-   }
+  body#rocking main, body#nails main, body#library main, body#bench main, body#billboard main, body#key main, body#frazada main, body#marracas main, body#spiral main
+
+  {display: block}
+
  }
