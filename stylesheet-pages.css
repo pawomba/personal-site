@@ -135,10 +135,13 @@ body#maracas main {
 }
 
 body#nails main {
-  width: auto;
+  width: 850px;
   margin: auto;
   display: grid;
   justify-items: center;
+  grid-template-areas:
+    "n1"
+    "n2";
 }
 
 .n1 {
