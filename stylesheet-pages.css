@@ -139,7 +139,7 @@ body#nails main {
   margin: auto;
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-template-areas:
     "n1"
     "n2";
