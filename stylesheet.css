@@ -208,6 +208,19 @@ body {
   transition: .5s ease;
 }
 
+/* spiral */
+.antennas {
+  width: 12vw;
+  position: absolute;
+  top: 24vh;
+  left: 40vw;
+}
+
+.antennas:hover {
+  transform: skewX(-3deg);
+  transition: .5s ease;
+}
+
 /* mobile medium  */
 @media screen and (max-width:1370px) {
   body {
@@ -236,6 +249,11 @@ body {
   .spiral {
     position: static;
     width: 15vw;
+  }
+
+  .antennas {
+    position: static;
+    width: 45vw;
   }
 
   .bench {

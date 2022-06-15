@@ -244,6 +244,42 @@ body#library main {
   grid-area: l6;
 }
 
+body#antennas main {
+  margin: 0;
+  justify-content: center;
+  align-content: center;
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+  grid-template-areas:
+    "a1 a3 a2"
+    "a6 a5 a4";
+
+}
+
+.a1 {
+  grid-area: a1;
+}
+
+.a2 {
+  grid-area: a2;
+}
+
+.a3 {
+  grid-area: a3;
+}
+
+.a4 {
+  grid-area: a4;
+}
+
+.a5 {
+  grid-area: a5;
+}
+
+.a6 {
+  grid-area: a6;
+}
 
 #spiral video {
   margin: 0px;
