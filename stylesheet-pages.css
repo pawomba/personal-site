@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  cursor: url('cursor1.png'), auto;
+}
+
 body {
   margin: 0;
   font-family: 'Catamaran', sans-serif;
