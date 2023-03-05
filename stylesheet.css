@@ -7,21 +7,28 @@ html {
 }
 
 body {
+   background: rgb(0, 0, 0);
+   background-image: radial-gradient(rgb(145, 145, 145) .5px, transparent 0);
+   background-size: 40px 40px;
+   background-position: -19px -19px;
   margin: 0;
   font-family: 'Catamaran', sans-serif;
   font-size: 14px;
-  background-image: url('background-outline.png');
-  /* background-color: #9ea0a8; */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
+  /* background-image: url('background-outline.png'); */
+  /* background-color: #000000; */
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
+  /* background-size: 100% 100%; */
+  
 }
+
 
 p {
   padding: 1em;
 }
 
 img {
+  image-rendering: pixelated;
   width: 100%;
 }
 
@@ -55,10 +62,10 @@ body {
 
 /* bench */
 .Bench {
-  width: 20vw;
+  width: 40vw;
   position: absolute;
-  left: 75vw;
-  top: 38vh;
+  left: 67vw;
+  top: 31vh;
 }
 
 .Bench:hover {
@@ -122,7 +129,7 @@ body {
 .rocking {
   width: 15vw;
   position: absolute;
-  top: 55vh;
+  top: 59vh;
   left: 43.5vw;
 }
 
@@ -175,7 +182,7 @@ body {
   width: 7.5vw;
   position: absolute;
   left: 16vw;
-  top: 17vh;
+  top: 12vh;
 }
 
 .ladder:hover {
@@ -226,7 +233,10 @@ body {
 @media screen and (max-width:1370px) {
   body {
     background-image: none;
-    background-color: rgb(249, 246, 251);
+    background-color: rgb(0, 0, 0);
+    background-image: radial-gradient(rgb(145, 145, 145) .5px, transparent 0);
+    background-size: 40px 40px;
+    background-position: -19px -19px;
     ;
   }
 }
@@ -262,9 +272,14 @@ body {
     margin: 5px 0;
   }
 
-  .broom, .water, .billboard, .Bench {
+  .broom, .water, .billboard {
     position: static;
     width: 60vw;
+  }
+
+  .Bench {
+    position: static;
+    width: 100vw;
   }
 
   .maracas, .folder {
