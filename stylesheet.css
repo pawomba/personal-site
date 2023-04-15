@@ -3,14 +3,14 @@
 }
 
 html {
-  cursor: url('cursor1.png'), auto;
+  cursor: url('http://www.rw-designer.com/cursor-view/144164.png'), auto;
 }
 
 body {
-   background: rgb(0, 0, 0);
-   background-image: radial-gradient(rgb(145, 145, 145) .5px, transparent 0);
-   background-size: 40px 40px;
-   background-position: -19px -19px;
+  background: rgb(0, 0, 0);
+  background-image: radial-gradient(rgb(145, 145, 145) .5px, transparent 0);
+  background-size: 40px 40px;
+  background-position: -19px -19px;
   margin: 0;
   font-family: 'Catamaran', sans-serif;
   font-size: 14px;
@@ -19,9 +19,47 @@ body {
   /* background-repeat: no-repeat; */
   /* background-attachment: fixed; */
   /* background-size: 100% 100%; */
-  
 }
 
+body {
+  overflow-x: scroll;
+}
+
+.content {
+  padding-right: 15px;
+  /* Add padding to prevent content from overlapping with the scroll bar */
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  /* Set the width of the scroll bar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000000;
+  /* Set the background color of the scroll bar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6afcf;
+  /* Set the color of the scroll bar thumb */
+}
+
+/* Set the position of the scroll bar to fixed */
+body::-webkit-scrollbar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+
+img {
+  shape-rendering: crispEdges;
+}
+
+a:hover {
+  cursor: url('http://www.rw-designer.com/cursor-view/144161.png');
+}
 
 p {
   padding: 1em;
@@ -34,14 +72,13 @@ img {
 
 h1 {}
 
-a:link, a:visited {
+a:link,
+a:visited {
   text-decoration: none;
   color: purple;
 }
 
-a:hover {
-    cursor: url('cursor2.png'), auto;
-}
+
 
 /* containers */
 * {
@@ -60,12 +97,25 @@ body {
   align-items: center;
 }
 
+/* ceiling */
+.ceiling {
+  width: 100vw;
+  position: absolute;
+  left: -38vw;
+  top: -25vh;
+}
+
+.ceiling:hover {
+  transform: scale(1.1, 1.1);
+  transition: .5s ease;
+}
+
 /* bench */
 .Bench {
   width: 40vw;
   position: absolute;
-  left: 67vw;
-  top: 31vh;
+  left: 130vw;
+  top: 25vh;
 }
 
 .Bench:hover {
@@ -78,7 +128,7 @@ body {
   width: 25vw;
   position: absolute;
   top: 60vh;
-  left: 5vw;
+  left: 29vw;
 }
 
 .billboard:hover {
@@ -91,7 +141,7 @@ body {
   width: 20vw;
   position: absolute;
   top: 70vh;
-  left: 75vw;
+  left: 0vw;
 }
 
 .broom:hover {
@@ -104,7 +154,7 @@ body {
   width: 9vw;
   position: absolute;
   top: 60vh;
-  left: 65vw;
+  left: 14vw;
 }
 
 .maracas:hover {
@@ -116,8 +166,8 @@ body {
 .nails {
   width: 11vw;
   position: absolute;
-  top: 0vh;
-  left: 56.5vw;
+  top: -3vh;
+  left: 117vw;
 }
 
 .nails:hover {
@@ -130,7 +180,7 @@ body {
   width: 15vw;
   position: absolute;
   top: 59vh;
-  left: 43.5vw;
+  left: 93vw;
 }
 
 .rocking:hover {
@@ -143,7 +193,7 @@ body {
   width: 7vw;
   position: absolute;
   left: 14vw;
-  top: 5vh;
+  top: 0vh;
 }
 
 .skirt:hover {
@@ -155,7 +205,7 @@ body {
 .water {
   width: 16vw;
   position: absolute;
-  left: 30vw;
+  left: 0vw;
   top: 30vh;
 }
 
@@ -166,10 +216,10 @@ body {
 
 /* folder */
 .folder {
-  width: 6vw;
+  width: 7.5vw;
   position: absolute;
-  left: 63vw;
-  top: 81vh;
+  left: 5vw;
+  top: 80vh;
 }
 
 .folder:hover {
@@ -179,10 +229,10 @@ body {
 
 /* ladder */
 .ladder {
-  width: 7.5vw;
+  width: 9vw;
   position: absolute;
-  left: 16vw;
-  top: 12vh;
+  left: 58vw;
+  top: 7vh;
 }
 
 .ladder:hover {
@@ -194,8 +244,8 @@ body {
 .long-key {
   width: 2vw;
   position: absolute;
-  left: 36vw;
-  top: 53vh;
+  left: 66vw;
+  top: 75vh;
 }
 
 .long-key:hover {
@@ -205,10 +255,10 @@ body {
 
 /* spiral */
 .spiral {
-  width: 3.5vw;
+  width: 4vw;
   position: absolute;
-  left: 31vw;
-  top: 0;
+  left: 7vw;
+  top: 130px;
 }
 
 .spiral:hover {
@@ -216,18 +266,45 @@ body {
   transition: .5s ease;
 }
 
-/* spiral */
+/* antennas */
 .antennas {
-  width: 12vw;
+  width: 14vw;
   position: absolute;
   top: 24vh;
-  left: 40vw;
+  left: 35vw;
 }
 
 .antennas:hover {
   transform: skewX(-3deg);
   transition: .5s ease;
 }
+
+/* MDPLS */
+.MDPLS {
+  width: 25vw;
+  position: absolute;
+  top: 58vh;
+  left: 130vw;
+}
+
+.MDPLS:hover {
+  transform: skewY(-3deg);
+  transition: .5s ease;
+}
+
+/* Railing */
+.Railing {
+  width: 70vw;
+  position: absolute;
+  top: 33vh;
+  left: 50vw;
+}
+
+.Railing:hover {
+  transform: skewX(-3deg);
+  transition: .5s ease;
+}
+
 
 /* mobile medium  */
 @media screen and (max-width:1370px) {
@@ -254,7 +331,22 @@ body {
     flex-direction: column;
     align-items: center;
     height: 80vh;
-    grid-column: auto
+    grid-column: auto;
+  }
+
+  .ceiling {
+    position: static;
+    width: 101vw;
+  }
+
+  .Railing {
+    position: static;
+    width: 91.5vw;
+  }
+
+  .long-key {
+    position: static;
+    width: 15vw;
   }
 
   .spiral {
@@ -272,7 +364,9 @@ body {
     margin: 5px 0;
   }
 
-  .broom, .water, .billboard {
+  .broom,
+  .water,
+  .billboard {
     position: static;
     width: 60vw;
   }
@@ -282,7 +376,8 @@ body {
     width: 100vw;
   }
 
-  .maracas, .folder {
+  .maracas,
+  .folder {
     position: static;
     width: 40vw;
   }
@@ -297,14 +392,10 @@ body {
     width: 45vw;
   }
 
-  .nails, .ladder {
+  .nails,
+  .ladder {
     position: static;
     width: 35vw;
-  }
-
-  .long-key {
-    position: static;
-    width: 15vw;
   }
 
   .spiral {
@@ -312,9 +403,8 @@ body {
     width: 10vw;
   }
 }
-}
 
-/* library cart things
+/* /* library cart things
 
 .library-cart-shelf {
   width: 70%;
@@ -477,7 +567,7 @@ body {
 
 .box:hover .text5 {
   display: block;
-}
+} */
 
 .nav {
   display: flex;
@@ -507,10 +597,10 @@ body {
   padding: 10px;
   display: flex;
   flex-direction: ; */
-height: 100vh;
-display: flex;
-flex-direction: column;
-/* flex-wrap: wrap;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   align-content: center; */
@@ -546,6 +636,22 @@ flex-direction: column;
 .column-item {
   height: 24%;
   /* background: rgb(137, 154, 94); */
+}
+
+#carousel {
+  width: 100%;
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+}
+
+#carousel .slide {
+  display: inline-block;
+
 }
 
 */
