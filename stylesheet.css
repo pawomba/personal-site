@@ -339,6 +339,11 @@ body {
     width: 101vw;
   }
 
+  .MDPLS {
+    position: static;
+    width: 70vw;
+  }
+
   .Railing {
     position: static;
     width: 91.5vw;
