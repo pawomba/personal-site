@@ -422,6 +422,11 @@ body {
     position: static;
     width: 10vw;
   }
+
+  .fulanita {
+    position: static;
+    width: 20vw;
+  }
 }
 
 /* /* library cart things
