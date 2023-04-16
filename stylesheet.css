@@ -6,6 +6,10 @@ html {
   cursor: url('http://www.rw-designer.com/cursor-view/144164.png'), auto;
 }
 
+*:hover {
+  cursor: url('http://www.rw-designer.com/cursor-view/144164.png'), auto;
+}
+
 body {
   background: rgb(0, 0, 0);
   background-image: radial-gradient(rgb(145, 145, 145) .5px, transparent 0);
@@ -31,12 +35,14 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 8.5px;
+  height: 8.5px;
   /* Set the width of the scroll bar */
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #000000;
+  background-color: #5b3e3e;
+  border-radius: 5px, dashed;
   /* Set the background color of the scroll bar track */
 }
 
@@ -57,9 +63,6 @@ img {
   shape-rendering: crispEdges;
 }
 
-a:hover {
-  cursor: url('http://www.rw-designer.com/cursor-view/144161.png');
-}
 
 p {
   padding: 1em;
@@ -102,7 +105,7 @@ body {
   width: 100vw;
   position: absolute;
   left: -38vw;
-  top: -25vh;
+  top: -22.5vh;
 }
 
 .ceiling:hover {
@@ -283,7 +286,7 @@ body {
 .MDPLS {
   width: 25vw;
   position: absolute;
-  top: 58vh;
+  top: 53vh;
   left: 130vw;
 }
 
@@ -303,6 +306,18 @@ body {
 .railing:hover {
   transform: skewX(-3deg);
   transition: .5s ease;
+}
+
+.fulanita {
+  width: 3vw;
+  position: absolute;
+  top: 3vh;
+  left: 92vw;
+}
+
+.fulanita:hover {
+  transition: .2s ease;
+  opacity: 3%;
 }
 
 
