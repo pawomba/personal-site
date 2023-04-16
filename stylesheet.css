@@ -292,15 +292,15 @@ body {
   transition: .5s ease;
 }
 
-/* Railing */
-.Railing {
+/* railing */
+.railing {
   width: 70vw;
   position: absolute;
   top: 33vh;
   left: 50vw;
 }
 
-.Railing:hover {
+.railing:hover {
   transform: skewX(-3deg);
   transition: .5s ease;
 }
@@ -344,7 +344,7 @@ body {
     width: 70vw;
   }
 
-  .Railing {
+  .railing {
     position: static;
     width: 91.5vw;
   }
