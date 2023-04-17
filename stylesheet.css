@@ -3,11 +3,11 @@
 }
 
 html {
-  cursor: url('http://www.rw-designer.com/cursor-view/144164.png'), auto;
+  cursor: url('crosshair.png'), auto;
 }
 
 *:hover {
-  cursor: url('http://www.rw-designer.com/cursor-view/144164.png'), auto;
+  cursor: url('crosshair.png'), auto;
 }
 
 body {
