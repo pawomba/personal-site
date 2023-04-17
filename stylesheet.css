@@ -16,8 +16,8 @@ body {
   background-size: 40px 40px;
   background-position: -19px -19px;
   margin: 0;
-  font-family: 'Catamaran', sans-serif;
-  font-size: 14px;
+  font-family: 'Hershey-Noailles-Times-Simplex-Light', serif;
+  font-size: 16px;
   /* background-image: url('background-outline.png'); */
   /* background-color: #000000; */
   /* background-repeat: no-repeat; */
@@ -104,8 +104,8 @@ body {
 .ceiling {
   width: 100vw;
   position: absolute;
-  left: -38vw;
-  top: -22.5vh;
+  left: -20vw;
+  top: -20vh;
 }
 
 .ceiling:hover {
