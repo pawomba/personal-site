@@ -387,7 +387,7 @@ body {
     width: 15vw;
   }
 
-  .antennas {
+  .antennas, {
     position: static;
     width: 45vw;
   }
@@ -440,6 +440,12 @@ body {
     position: static;
     width: 20vw;
   }
+
+  .people  {
+    position: static;
+    width: 45vw;
+  }
+
 }
 
 /* /* library cart things
