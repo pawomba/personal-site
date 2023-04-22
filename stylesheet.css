@@ -2,13 +2,13 @@
   box-sizing: border-box;
 }
 
-html {
+/* html {
   cursor: url('crosshair.png'), auto;
 }
 
 *:hover {
   cursor: url('crosshair.png'), auto;
-}
+} */
 
 body {
   background: rgb(0, 0, 0);
