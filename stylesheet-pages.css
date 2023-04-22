@@ -37,7 +37,12 @@ iframe {
 a:link,
 a:visited {
   text-decoration: none;
-  color: purple;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 /* page styles */

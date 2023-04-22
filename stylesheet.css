@@ -78,7 +78,7 @@ h1 {}
 a:link,
 a:visited {
   text-decoration: none;
-  color: purple;
+  color: rgb(255, 255, 255);
 }
 
 
@@ -308,6 +308,7 @@ body {
   transition: .5s ease;
 }
 
+/* fulanita */
 .fulanita {
   width: 3vw;
   position: absolute;
@@ -320,6 +321,18 @@ body {
   opacity: 3%;
 }
 
+/* people */
+.people {
+  width: 8vw;
+  position: absolute;
+  top: 80vh;
+  left: 116vw;
+}
+
+.people:hover {
+  transform: skewX(-3deg);
+  transition: .5s ease;
+}
 
 /* mobile medium  */
 @media screen and (max-width:1370px) {
