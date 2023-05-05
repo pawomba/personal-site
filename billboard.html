@@ -16,20 +16,20 @@
   <main>
 
     <div class="row-item c1">
-      <img src="imgs/Billboard/Billboard2.jpg" alt="billboard" loading="lazy" />
+      <img src="imgs/Billboard/Billboard2.jpg" alt="billboard" loading="lazy" class="clickable-image"/>
     </div>
 
     <div class="row-item c2">
-      <img src="imgs/Billboard/Billboard5.jpg" alt="billboard" loading="lazy"/>
+      <img src="imgs/Billboard/Billboard5.jpg" alt="billboard" loading="lazy" class="clickable-image"/>
     </div>
 
     <div class="row-item c3">
-      <img src="imgs/Billboard/Billboard3.jpg" alt="billboard" loading="lazy" />
+      <img src="imgs/Billboard/Billboard3.jpg" alt="billboard" loading="lazy" class="clickable-image"/>
     </div>
 
 
     <div class="row-item c4">
-      <img src="imgs/Billboard/Billboard1.jpg" alt="billboard" loading="lazy"/>
+      <img src="imgs/Billboard/Billboard1.jpg" alt="billboard" loading="lazy" class="clickable-image"/>
     </div>
 
   </main>
@@ -40,5 +40,22 @@
     </p>
 
 </body>
+
+<script>
+  const images = document.querySelectorAll('.clickable-image');
+images.forEach(image => {
+  image.addEventListener('click', () => {
+    const enlargedImage = document.createElement('div');
+    enlargedImage.classList.add('enlarged-image');
+    const img = document.createElement('img');
+    img.src = image.src;
+    enlargedImage.appendChild(img);
+    document.body.appendChild(enlargedImage);
+    enlargedImage.addEventListener('click', () => {
+      document.body.removeChild(enlargedImage);
+    });
+  });
+});
+</script>
 
 </main>

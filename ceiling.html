@@ -27,11 +27,11 @@
     <div></div>
 
     <div class="grid-item image1">
-      <img src="imgs/Ceiling/AlumBox.jpg" alt="" loading="lazy" />
+      <img src="imgs/Ceiling/AlumBox.jpg" alt="" loading="lazy"  class="clickable-image"/>
     </div>
 
     <div class="grid-item image2">
-      <img src="imgs/Ceiling/HeartBit.jpg" alt="" loading="lazy" />
+      <img src="imgs/Ceiling/HeartBit.jpg" alt="" loading="lazy" class="clickable-image"/>
     </div>
 
     <div class="grid-item caption1">
@@ -46,16 +46,16 @@
     </div>
 
     <div class="grid-item image5">
-      <img src="imgs/Ceiling/Scan2.jpeg" alt="" loading="lazy" />
+      <img src="imgs/Ceiling/Scan2.jpeg" alt="" loading="lazy"  class="clickable-image"/>
     </div>
 
     <div class="grid-item image6">
-      <img src="imgs/Ceiling/Scan3.jpg" alt="" loading="lazy" />
+      <img src="imgs/Ceiling/Scan3.jpg" alt="" loading="lazy" class="clickable-image" />
     </div>
  
     
     <div class="grid-item image4">
-      <img src="imgs/Ceiling/Outlets.gif" alt="" loading="lazy" />
+      <img src="imgs/Ceiling/Outlets.gif" alt="" loading="lazy"  class="clickable-image"/>
     </div>
 
     <div></div>
@@ -73,7 +73,7 @@
     </div>
 
      <div class="grid-item image3">
-          <img src="imgs/Ceiling/IronTile.jpg" alt="" loading="lazy" />
+          <img src="imgs/Ceiling/IronTile.jpg" alt="" loading="lazy"  class="clickable-image"/>
         </div>
 
         <div class="grid-item caption3">
@@ -83,15 +83,29 @@
         </div>
 
     <div class="grid-item image7">
-      <img src="imgs/Ceiling/drawing.jpg" alt="" loading="lazy" />
+      <img src="imgs/Ceiling/drawing.jpg" alt="" loading="lazy"  class="clickable-image"/>
     </div>
-  
-
-
 
     </div>
 
   </main>
+
+  <script>
+    const images = document.querySelectorAll('.clickable-image');
+  images.forEach(image => {
+    image.addEventListener('click', () => {
+      const enlargedImage = document.createElement('div');
+      enlargedImage.classList.add('enlarged-image');
+      const img = document.createElement('img');
+      img.src = image.src;
+      enlargedImage.appendChild(img);
+      document.body.appendChild(enlargedImage);
+      enlargedImage.addEventListener('click', () => {
+        document.body.removeChild(enlargedImage);
+      });
+    });
+  });
+  </script>
 
 </body>
 

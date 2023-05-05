@@ -38,15 +38,15 @@
     </div>
 
     <div class="row-item l4">
-      <img src="imgs/library/Falling-key.jpg" loading="lazy" />
+      <img src="imgs/library/Falling-key.jpg" loading="lazy" class="clickable-image"/>
     </div>
 
     <div class="row-item l5">
-      <img src="imgs/library/Paperairplane.jpg" loading="lazy" />
+      <img src="imgs/library/Paperairplane.jpg" loading="lazy" class="clickable-image"/>
     </div>
 
     <div class="row-item l6">
-      <img src="imgs/library/Pencil.JPG" loading="lazy" />
+      <img src="imgs/library/Pencil.JPG" loading="lazy" class="clickable-image"/>
     </div>
   </main>
 
@@ -55,6 +55,23 @@
     Red oak and linear actuator, New Haven Public Library Book, Arduino and Servo Motor, Ringing Bell, and Arduino
     </p>
 
+
+    <script>
+      const images = document.querySelectorAll('.clickable-image');
+    images.forEach(image => {
+      image.addEventListener('click', () => {
+        const enlargedImage = document.createElement('div');
+        enlargedImage.classList.add('enlarged-image');
+        const img = document.createElement('img');
+        img.src = image.src;
+        enlargedImage.appendChild(img);
+        document.body.appendChild(enlargedImage);
+        enlargedImage.addEventListener('click', () => {
+          document.body.removeChild(enlargedImage);
+        });
+      });
+    });
+    </script>
 
 </body>
 

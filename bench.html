@@ -16,35 +16,35 @@
     <main>
 
       <div class="row-item b8">
-        <img src="imgs/Bench/Bench.gif" alt="bench artwork" loading="lazy"/>
+        <img src="imgs/Bench/Bench.gif" alt="bench artwork" loading="lazy" class="clickable-image"/>
       </div>
       
       <div class="row-item b1">
-        <img src="imgs/Bench/Bench1.jpg" alt="bench artwork" loading="lazy"/>
+        <img src="imgs/Bench/resize/Bench1.jpg" alt="bench artwork" loading="lazy" class="clickable-image">
       </div>
 
       <div class="row-item b2">
-        <img src="imgs/Bench/Bench2.jpg" alt="bench artwork"  loading="lazy"/>
+        <img src="imgs/Bench/resize/Bench2.jpg" alt="bench artwork"  loading="lazy" class="clickable-image" />
       </div>
 
       <div class="row-item b3">
-        <img src="imgs/Bench/Bench3.jpg" alt="bench artwork"  loading="lazy"/>
+        <img src="imgs/Bench/resize/Bench3.jpg" alt="bench artwork"  loading="lazy" class="clickable-image" />
       </div>
 
       <div class="row-item b4">
-        <img src="imgs/Bench/Bench4.jpg" alt="bench artwork" loading="lazy"/>
+        <img src="imgs/Bench/resize/Bench4.jpg" alt="bench artwork" loading="lazy" class="clickable-image"/>
       </div>
 
       <div class="row-item b5">
-        <img src="imgs/Bench/Bench5.jpg" alt="bench artwork" loading="lazy"/>
+        <img src="imgs/Bench/resize/Bench5.jpg" alt="bench artwork" loading="lazy" class="clickable-image"/>
       </div>
 
       <div class="row-item b6">
-        <img src="imgs/Bench/Bench6.jpg" alt="bench artwork" loading="lazy"/>
+        <img src="imgs/Bench/resize/Bench6.jpg" alt="bench artwork" loading="lazy" class="clickable-image"/>
       </div>
 
       <div class="row-item b7">
-        <img src="imgs/Bench/Bench7.jpg" alt="bench artwork" loading="lazy"/>
+        <img src="imgs/Bench/resize/Bench7.jpg" alt="bench artwork" loading="lazy" class="clickable-image"/>
       </div>
 
     </main>
@@ -55,4 +55,22 @@
       </p>
 
 </body>
+
+<script>
+  const images = document.querySelectorAll('.clickable-image');
+images.forEach(image => {
+  image.addEventListener('click', () => {
+    const enlargedImage = document.createElement('div');
+    enlargedImage.classList.add('enlarged-image');
+    const img = document.createElement('img');
+    img.src = image.src;
+    enlargedImage.appendChild(img);
+    document.body.appendChild(enlargedImage);
+    enlargedImage.addEventListener('click', () => {
+      document.body.removeChild(enlargedImage);
+    });
+  });
+});
+</script>
+
 </html>

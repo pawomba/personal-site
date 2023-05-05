@@ -16,11 +16,11 @@
   <main>
 
     <div class="row-item k1">
-      <img src="imgs/long-key/falling-key.jpg" loading="lazy"/>
+      <img src="imgs/long-key/falling-key.jpg" loading="lazy" class="clickable-image"/>
     </div>
 
     <div class="row-item k2">
-      <img src="imgs/long-key/moving-key.jpg" loading="lazy"/>
+      <img src="imgs/long-key/moving-key.jpg" loading="lazy" class="clickable-image"/>
     </div>
 
 <div class="grid-item caption6">
@@ -34,6 +34,23 @@
     </div>
 
   </main>
+
+  <script>
+    const images = document.querySelectorAll('.clickable-image');
+  images.forEach(image => {
+    image.addEventListener('click', () => {
+      const enlargedImage = document.createElement('div');
+      enlargedImage.classList.add('enlarged-image');
+      const img = document.createElement('img');
+      img.src = image.src;
+      enlargedImage.appendChild(img);
+      document.body.appendChild(enlargedImage);
+      enlargedImage.addEventListener('click', () => {
+        document.body.removeChild(enlargedImage);
+      });
+    });
+  });
+  </script>
 
 </body>
 

@@ -15,27 +15,27 @@
 
     <main>
       <div class="row-item a1">
-        <img src="imgs/Antennas/bikerack.jpg" loading="lazy"/>
+        <img src="imgs/Antennas/larger /bikerack.jpg" loading="lazy" class="clickable-image"/>
       </div>
 
       <div class="row-item a2">
-        <img src="imgs/Antennas/dustpan.jpg" loading="lazy" />
+        <img src="imgs/Antennas/larger /dustpan.jpg" loading="lazy" class="clickable-image"/>
       </div>
 
       <div class="row-item a3">
-        <img src="imgs/Antennas/wallplug.jpg" loading="lazy"/>
+        <img src="imgs/Antennas/larger /wallplug.jpg" loading="lazy" class="clickable-image"/>
       </div>
 
       <div class="row-item a4">
-        <img src="imgs/Antennas/railing.jpg" loading="lazy"/>
+        <img src="imgs/Antennas/larger /railing.jpg" loading="lazy" class="clickable-image"/>
       </div>
 
       <div class="row-item a5">
-        <img src="imgs/Antennas/trashcan.jpg" loading="lazy"/>
+        <img src="imgs/Antennas/larger /trashcan.jpg" loading="lazy" class="clickable-image"/>
       </div>
 
       <div class="row-item a6">
-        <img src="imgs/Antennas/vent.JPG" loading="lazy"/>
+        <img src="imgs/Antennas/larger /vent.jpg" loading="lazy" class="clickable-image"/>
       </div>
 
   </div>
@@ -47,4 +47,21 @@
     
 </body>
 
+<script>
+  const images = document.querySelectorAll('.clickable-image');
+images.forEach(image => {
+  image.addEventListener('click', () => {
+    const enlargedImage = document.createElement('div');
+    enlargedImage.classList.add('enlarged-image');
+    const img = document.createElement('img');
+    img.src = image.src;
+    enlargedImage.appendChild(img);
+    document.body.appendChild(enlargedImage);
+    enlargedImage.addEventListener('click', () => {
+      document.body.removeChild(enlargedImage);
+    });
+  });
+});
+</script>
 </html>
+
