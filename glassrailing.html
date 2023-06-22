@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>*</title>
+  <link rel="stylesheet" href="stylesheet-pages.css" />
+
+  <link rel="icon" type="image/png" href="dove.png" />
+</head>
+
+<body id="glassrailing">
+
+  <main>
+
+    <div class="row-item gr1">
+      <img src="imgs/GlassRailing/right.jpg" loading="lazy" class="clickable-image"/>
+    </div>
+
+    <div class="row-item gr2">
+      <img src="imgs/GlassRailing/left.jpg" loading="lazy" class="clickable-image"/>
+    </div>
+
+
+    <div class="gr3">
+      <img src="imgs/GlassRailing/MG_9630-copy.jpg" loading="lazy" class="clickable-image"/>
+    </div>
+
+    <div class="gr4">
+      <img src="imgs/GlassRailing/MG_9634-copy.jpg" loading="lazy" class="clickable-image"/>
+    </div>
+
+    <div class="gr5">
+      <img src="imgs/GlassRailing/MG_9641-copy.jpg" loading="lazy" class="clickable-image"/>
+    </div>
+ 
+    <div class="grid-item grcaption6">
+      <p style="color: white;"><i>Money Rail (left)</i>, 2023<br> 
+        Glass, brass, bills, coins</p>
+        </div>
+    
+        <div class="grid-item grcaption7">
+          <p style="color: white;"><i>Money Rail (right)</i>, 2023<br> 
+            Glass, brass, bills, coins</p>
+        </div>
+  
+
+  </main>
+
+  <script>
+    const images = document.querySelectorAll('.clickable-image');
+  images.forEach(image => {
+    image.addEventListener('click', () => {
+      const enlargedImage = document.createElement('div');
+      enlargedImage.classList.add('enlarged-image');
+      const img = document.createElement('img');
+      img.src = image.src;
+      enlargedImage.appendChild(img);
+      document.body.appendChild(enlargedImage);
+      enlargedImage.addEventListener('click', () => {
+        document.body.removeChild(enlargedImage);
+      });
+    });
+  });
+  </script>
+
+</body>
+
+</main>

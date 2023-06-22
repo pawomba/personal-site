@@ -100,6 +100,32 @@ body {
   align-items: center;
 }
 
+/* glass railing */
+.glassrailing {
+  width: 20vw;
+  position: absolute;
+  top: 25vh;
+  left: 30vw;
+}
+
+.glassrailing:hover {
+  transform: skewX(-5deg);
+  transition: .5s ease;
+}
+
+/* door */
+.door {
+  width: 10vw;
+  position: absolute;
+  left: 180vw;
+  top: 180px;
+}
+
+.door:hover {
+  transform: translateY(7px);
+  transition: .5s ease;
+}
+
 /* ceiling */
 .ceiling {
   width: 100vw;
@@ -183,7 +209,7 @@ body {
   width: 15vw;
   position: absolute;
   top: 59vh;
-  left: 93vw;
+  left: 170vw;
 }
 
 .rocking:hover {
@@ -234,7 +260,7 @@ body {
 .ladder {
   width: 9vw;
   position: absolute;
-  left: 58vw;
+  left: 65vw;
   top: 7vh;
 }
 
@@ -273,8 +299,8 @@ body {
 .antennas {
   width: 14vw;
   position: absolute;
-  top: 24vh;
-  left: 35vw;
+  top: 63vh;
+  left: 95vw;
 }
 
 .antennas:hover {
@@ -326,7 +352,7 @@ body {
   width: 8vw;
   position: absolute;
   top: 80vh;
-  left: 116vw;
+  left: 195vw;
 }
 
 .people:hover {
@@ -360,6 +386,16 @@ body {
     align-items: center;
     height: 80vh;
     grid-column: auto;
+  }
+
+  .glassrailing {
+    position: static;
+    width: 60vw;
+  }
+
+  .door {
+    position: static;
+    width: 30vw;
   }
 
   .ceiling {

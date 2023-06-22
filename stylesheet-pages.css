@@ -97,6 +97,88 @@ body#ceiling main {
   border: 0; */
 }
 
+/* glass */
+
+#glassrailing img {
+  margin: ;
+}
+
+body#glassrailing main {
+  margin: ;
+  display: grid;
+  grid-template-columns: 33vw 33vw 33vw;
+  grid-template-areas:
+    "gr1 . grcaption7"
+     "gr2 . grcaption6"
+     "gr3 gr4 gr5";
+}
+
+.gr1 {
+  grid-area: gr1;
+}
+
+.gr2 {
+  grid-area: gr2;
+}
+
+.grcaption6 {
+  grid-area: grcaption6;
+}
+
+.grcaption7 {
+  grid-area: grcaption7;
+}
+
+.gr3 {
+  grid-area: gr3;
+}
+
+.gr4 {
+  grid-area: gr4;
+}
+
+.gr5 {
+  grid-area: gr5;
+}
+
+/* door */
+
+#door img {
+  margin: px;
+}
+
+body#door main {
+  margin: ;
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw 25vw;
+  grid-template-areas:
+    ". d1 . d2"
+    "d3 . d4 ."
+    "dcaption1 . . ."
+}
+
+.d1 {
+  grid-area: d1;
+}
+
+.d2 {
+  grid-area: d2;
+}
+
+.d3 {
+  grid-area: d3;
+}
+
+.d4 {
+  grid-area: d4;
+}
+
+.dcaption1 {
+  grid-area: dcaption1;
+}
+
+
+
 .ceiling {
   position: relative;
   display: grid;
@@ -529,6 +611,8 @@ body#spiral main {
      display: block;
    } */
 
+  body#glassrailing main,
+  body#door main,
   body#ceiling main,
   body#railing main,
   body#antennas main,

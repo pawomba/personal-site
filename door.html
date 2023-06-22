@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>*</title>
+  <link rel="stylesheet" href="stylesheet-pages.css" />
+
+  <link rel="icon" type="image/png" href="dove.png" />
+</head>
+
+<body id="door">
+
+  <main>
+
+    <div class="row-item d1">
+      <img src="imgs/Door/doorside.jpg" loading="lazy" class="clickable-image"/>
+    </div>
+
+    <div class="row-item d2">
+      <img src="imgs/Door/door3:4.jpg" loading="lazy" class="clickable-image"/>
+    </div>
+
+    <div class="row-item d3">
+      <img src="imgs/Door/doorcuclosed.jpg" loading="lazy" class="clickable-image"/>
+    </div>
+
+    <div class="row-item d4">
+      <img src="imgs/Door/doorcuopen.jpg" loading="lazy" class="clickable-image"/>
+    </div>
+
+<div class="grid-item dcaption1">
+  <p style="color: white;"><i>Panic Piggybank</i>, 2023<br> 
+    Etched panic push bar, aluminum square, brass, coins, hardware</p>
+    </div>
+
+  </main>
+
+  <script>
+    const images = document.querySelectorAll('.clickable-image');
+  images.forEach(image => {
+    image.addEventListener('click', () => {
+      const enlargedImage = document.createElement('div');
+      enlargedImage.classList.add('enlarged-image');
+      const img = document.createElement('img');
+      img.src = image.src;
+      enlargedImage.appendChild(img);
+      document.body.appendChild(enlargedImage);
+      enlargedImage.addEventListener('click', () => {
+        document.body.removeChild(enlargedImage);
+      });
+    });
+  });
+  </script>
+
+</body>
+
+</main>
