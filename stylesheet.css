@@ -102,10 +102,10 @@ body {
 
 /* Ibeam */
 .ibeam {
-  max-width: 4vw;
+  width: 4.5vw;
   position: absolute;
   left: 7vw;
-  top: 170px;
+  top: 160px;
 }
 
 .ibeam:hover {
