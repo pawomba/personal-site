@@ -5,22 +5,46 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>❀</title>
+  <title>*</title>
   <link rel="stylesheet" href="stylesheet-pages.css" />
 
   <link rel="icon" type="image/png" href="dove.png" />
 </head>
 
-<body id="railing">
+<body id="ibeam">
 
-  <main><center>
-    <img src="imgs/ibeam/ibeam.jpg" width="50%" loading="lazy">
-  </center>
+  <main>
+
+    <div class="row-item i1">
+      <img src="imgs/ibeam/ibeam.jpg" loading="lazy" class="clickable-image"/>
+    </div>
+
+
+    <div class="grid-item i2">
+      <p style="color: white;"><i>Money Rail (left)</i>, 2023<br> 
+        Plexilass, keys, bills, coins</p>
+        </div>
+  
+
   </main>
 
-  <p style="color: white;"><i>I-beam</i>, 2023<br> 
-    Plexiglass, coins, keys
- </p>>
+  <script>
+    const images = document.querySelectorAll('.clickable-image');
+  images.forEach(image => {
+    image.addEventListener('click', () => {
+      const enlargedImage = document.createElement('div');
+      enlargedImage.classList.add('enlarged-image');
+      const img = document.createElement('img');
+      img.src = image.src;
+      enlargedImage.appendChild(img);
+      document.body.appendChild(enlargedImage);
+      enlargedImage.addEventListener('click', () => {
+        document.body.removeChild(enlargedImage);
+      });
+    });
+  });
+  </script>
 
 </body>
 
+</main>

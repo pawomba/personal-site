@@ -97,6 +97,33 @@ body#ceiling main {
   border: 0; */
 }
 
+
+/* ibeam */
+
+
+#ibeam img {
+  margin: ;
+}
+
+body#ibeam main {
+  margin: ;
+  display: grid;
+  grid-template-columns: 33vw 33vw 33vw;
+  grid-template-areas:
+   ". i1 ."
+   ". i2 ."
+   ". . ."
+}
+
+.i1 {
+  grid-area: i1;
+}
+
+.i2 {
+  grid-area: i2;
+}
+
+
 /* glass */
 
 #glassrailing img {
@@ -610,7 +637,8 @@ body#spiral main {
   /* #library {
      display: block;
    } */
-
+  
+  body#ibeam main,
   body#glassrailing main,
   body#door main,
   body#ceiling main,
