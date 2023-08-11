@@ -100,9 +100,9 @@ body {
   align-items: center;
 }
 
-/* Ibeam */
+/* ibeam */
 .ibeam {
-  width: 4.5vw;
+  width: 4vw;
   position: absolute;
   left: 7vw;
   top: 160px;
@@ -407,11 +407,6 @@ body {
     width: 60vw;
   }
 
-  .ibeam {
-    position: static;
-    width: 12vw;
-  }
-
   .door {
     position: static;
     width: 30vw;
@@ -432,7 +427,8 @@ body {
     width: 91.5vw;
   }
 
-  .long-key {
+  .long-key,
+  .ibeam {
     position: static;
     width: 15vw;
   }
