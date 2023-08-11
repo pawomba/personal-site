@@ -102,7 +102,7 @@ body {
 
 /* Ibeam */
 .ibeam {
-  width: 4vw;
+  max-width: 4vw;
   position: absolute;
   left: 7vw;
   top: 170px;
