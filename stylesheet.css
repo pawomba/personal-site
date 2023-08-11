@@ -108,6 +108,11 @@ body {
   top: 170px;
 }
 
+.ibeam:hover {
+  transform: translateY(-7px);
+  transition: .5s ease;
+}
+
 /* glass railing */
 .glassrailing {
   width: 20vw;
@@ -396,9 +401,15 @@ body {
     grid-column: auto;
   }
 
+ 
   .glassrailing {
     position: static;
     width: 60vw;
+  }
+
+  .ibeam {
+    position: static;
+    width: 12vw;
   }
 
   .door {
