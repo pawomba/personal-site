@@ -422,6 +422,12 @@ body {
     width: 70vw;
   }
 
+  .fence {
+    position: static;
+    width: 62vw;
+  }
+
+
   .railing {
     position: static;
     width: 91.5vw;
@@ -460,7 +466,6 @@ body {
     width: 100vw;
   }
 
-  .fence,
   .folder {
     position: static;
     width: 40vw;
