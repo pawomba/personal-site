@@ -411,8 +411,8 @@ body#fence main {
   grid-column-gap: 15px;
   grid-row-gap: 10px;
   grid-template-areas:
-    "f4 f3 f2"
-    "f6 f5 f1";
+    "f1 f3 f4"
+    "f2 f5 f6";
 
 }
 
@@ -714,5 +714,3 @@ body#spiral main {
   } */
 
 }
-
-

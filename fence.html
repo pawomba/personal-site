@@ -15,8 +15,9 @@
 
   <main>
 
+  </body>
       <div class="row-item f1">
-        <img src="imgs/Fence/fence1.jpg" loading="lazy"/>
+        <img src="imgs/Fence/fence1.jpg" loading="lazy" class="clickable-image"/>
       </div>
 
       <div class="row-item f2">
@@ -39,11 +40,28 @@
         <img src="imgs/Fence/fence4.jpg" loading="lazy" class="clickable-image"/>
       </div>
 
-
-  </main>
-
     <p style="color: white;"><i>Precarious Infrastrcutures, (Fence)</i>, 2023<br> 
       Borosilicate Glass and Aluminum
       </p>
 
-</body>
+    </body>
+
+  </main>
+
+      <script>
+        const images = document.querySelectorAll('.clickable-image');
+      images.forEach(image => {
+        image.addEventListener('click', () => {
+          const enlargedImage = document.createElement('div');
+          enlargedImage.classList.add('enlarged-image');
+          const img = document.createElement('img');
+          img.src = image.src;
+          enlargedImage.appendChild(img);
+          document.body.appendChild(enlargedImage);
+          enlargedImage.addEventListener('click', () => {
+            document.body.removeChild(enlargedImage);
+          });
+        });
+      });
+      </script>
+      </html>
