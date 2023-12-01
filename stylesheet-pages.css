@@ -396,23 +396,48 @@ body#frazada main {
   grid-area: f1;
 }
 
-/* maracas */
+/* fence */
 
-#maracas video {
+#fence video {
   margin: 0;
   vertical-align: top;
 }
 
-body#maracas main {
-  margin: 0px;
+body#fence main {
+  margin: 0;
+  justify-content: center;
+  align-content: center;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
   grid-template-areas:
-    "m1";
+    "f4 f3 f2"
+    "f6 f5 f1";
+
 }
 
-.m1 {
-  grid-area: m1;
+.f1 {
+  grid-area: f1;
+}
+
+.f2 {
+  grid-area: f2;
+}
+
+.f3 {
+  grid-area: f3;
+}
+
+.f4 {
+  grid-area: f4;
+}
+
+.f5 {
+  grid-area: f5;
+}
+
+.f6 {
+  grid-area: f6;
 }
 
 /* nails */
@@ -652,7 +677,7 @@ body#spiral main {
   body#key main,
   body#frazada main,
   body#mdpls main,
-  body#maracas main,
+  body#antenna main,
   body#spiral main {
     display: block;
     width: 100%;
