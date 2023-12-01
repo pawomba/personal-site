@@ -668,7 +668,7 @@ body#spiral main {
   body#door main,
   body#ceiling main,
   body#railing main,
-  body#antennas main,
+  body#fence main,
   body#rocking main,
   body#nails main,
   body#library main,
@@ -677,7 +677,7 @@ body#spiral main {
   body#key main,
   body#frazada main,
   body#mdpls main,
-  body#antenna main,
+  body#antennas main,
   body#spiral main {
     display: block;
     width: 100%;
