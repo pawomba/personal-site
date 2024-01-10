@@ -125,7 +125,7 @@ body#ceiling main {
 }
 
 body#securitybar main {
-  margin: 20px;
+  margin: 0px;
   display: grid;
   grid-template-columns: 33vw 33vw 33vw;
   grid-template-areas:
@@ -645,6 +645,7 @@ body#spiral main {
 
 @media only screen and (max-width: 600px) {
 
+  body#securitybar main,
   body#ibeam main,
   body#glassrailing main,
   body#door main,
