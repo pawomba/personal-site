@@ -100,6 +100,32 @@ body {
   align-items: center;
 }
 
+/* securitybar */
+.securitybar {
+  width: 3.5vw;
+  position: absolute;
+  top: 65vh;
+  left: 56vw;
+}
+
+.securitybar:hover {
+  transform: scale(1.1, 1.1);
+  transition: .5s ease;
+}
+
+/* longfence */
+.longfence {
+  width: 35vw;
+  position: absolute;
+  top: 55vh;
+  left: 190vw;
+}
+
+.railing:hover {
+  transform: skewX(-3deg);
+  transition: .5s ease;
+}
+
 /* ibeam */
 .ibeam {
   width: 4vw;
@@ -169,8 +195,8 @@ body {
 .billboard {
   width: 25vw;
   position: absolute;
-  top: 60vh;
-  left: 180vw;
+  top: 65vh;
+  left: 150vw;
 }
 
 .billboard:hover {
@@ -299,8 +325,8 @@ body {
 .spiral {
   width: 4vw;
   position: absolute;
-  left: 170vw;
-  top: 130px;
+  left: 176vw;
+  top: 80px;
 }
 
 .spiral:hover {
@@ -325,7 +351,7 @@ body {
 .MDPLS {
   width: 25vw;
   position: absolute;
-  top: 40vh;
+  top: 30vh;
   left: 210vw;
 }
 
@@ -415,6 +441,11 @@ body {
   .ceiling {
     position: static;
     width: 101vw;
+  }
+
+  .securitybar {
+    position: static;
+    width: 14vw;
   }
 
   .MDPLS {

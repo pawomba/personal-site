@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>*</title>
+  <link rel="stylesheet" href="stylesheet-pages.css" />
+
+  <link rel="icon" type="image/png" href="dove.png" />
+</head>
+
+<body id="securitybar">
+
+  <main>
+<br>
+<br>
+<br>
+<br>
+    <div class="row-item i1">
+      <img src="imgs/securitybar/Security Bar.jpg" loading="lazy" class="clickable-image"/>
+    </div>
+
+    <div class="grid-item i2">
+      <p style="color: white;"><i>Precarious Infrastructures (car club)</i>, 2023<br> 
+        Glass
+      <br>
+      15 x 3 x 1 inches</p>
+        </div>
+
+  </main>
+
+  <script>
+    const images = document.querySelectorAll('.clickable-image');
+  images.forEach(image => {
+    image.addEventListener('click', () => {
+      const enlargedImage = document.createElement('div');
+      enlargedImage.classList.add('enlarged-image');
+      const img = document.createElement('img');
+      img.src = image.src;
+      enlargedImage.appendChild(img);
+      document.body.appendChild(enlargedImage);
+      enlargedImage.addEventListener('click', () => {
+        document.body.removeChild(enlargedImage);
+      });
+    });
+  });
+  </script>
+
+</body>
+
+</main>
