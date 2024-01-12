@@ -11,6 +11,7 @@ body {
   font-family: 'Hershey-Noailles-Times-Simplex-Light', serif;
   font-size: 16px;
   background-color: rgb(0, 0, 0);
+  padding: 5px;
 }
 
 @font-face {
@@ -21,7 +22,7 @@ body {
 }
 
 p {
-  padding: .8em;
+  padding: 0px;
 }
 
 img,
@@ -141,6 +142,29 @@ body#securitybar main {
   grid-area: i2;
 }
 
+/* glasskey */
+
+#glasskey img {
+  margin: 0px;
+}
+
+body#glasskey main {
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 33vw 33vw 33vw;
+  grid-template-areas:
+    ". gk1 ."
+    ". gk2 ."
+}
+
+.gk1 {
+  grid-area: gk1;
+}
+
+.gk2 {
+  grid-area: gk2;
+}
+
 /* ibeam */
 
 
@@ -250,7 +274,7 @@ body#door main {
 /* long fence */
 
 body#longfence main {
-  margin: 5px;
+  margin: px;
     display: grid;
     grid-template-columns: 33.45vw 29vw 0.5vw 35.1vw 11vw;
     grid-template-areas:
@@ -274,7 +298,7 @@ body#longfence main {
 /* bench */
 
 body#bench main {
-  margin: 20px;
+  margin: px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
@@ -366,7 +390,7 @@ body#billboard main {
 }
 
 body#frazada main {
-  margin: 20px;
+  margin: 0px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
@@ -380,7 +404,7 @@ body#frazada main {
 
 /* fence */
 
-#fence video {
+#fence img {
   margin: 0;
   vertical-align: top;
 }
@@ -390,12 +414,13 @@ body#fence main {
   justify-content: center;
   align-content: center;
   display: grid;
-  grid-column-gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
   grid-row-gap: 10px;
   grid-template-areas:
-    ". f1 f4 ."
-    ". f2 f5 .";
-
+      "f1 f4"
+      "f2 f5"
+      "f7 .";
 }
 
 .f1 {
@@ -420,6 +445,10 @@ body#fence main {
 
 .f6 {
   grid-area: f6;
+}
+
+.f7 {
+  grid-area: 7;
 }
 
 /* nails */
@@ -451,12 +480,12 @@ body#nails main {
 /* rockingchair */
 
 #rocking video {
-  margin: 20;
+  margin: 0;
   vertical-align: top;
 }
 
 body#rocking main {
-  margin: auto;
+  margin: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
@@ -643,6 +672,7 @@ body#spiral main {
 
   body#longfence main,
   body#securitybar main,
+  body#glasskey main,
   body#ibeam main,
   body#glassrailing main,
   body#door main,

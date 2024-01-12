@@ -113,6 +113,22 @@ body {
   transition: .5s ease;
 }
 
+
+/* glasskey */
+.glasskey {
+  width: 2vw;
+  position: absolute;
+  top: 86vh;
+  left: 64vw;
+  transform: rotate(-60deg);
+}
+
+.glasskey:hover {
+  transform: rotate(90deg);
+  transition: .5s ease;
+}
+
+
 /* longfence */
 .longfence {
   width: 35vw;
@@ -121,8 +137,8 @@ body {
   left: 190vw;
 }
 
-.railing:hover {
-  transform: skewX(-3deg);
+.longfence:hover {
+  transform: translateX(-20px);
   transition: .5s ease;
 }
 
@@ -445,6 +461,11 @@ body {
   .ceiling {
     position: static;
     width: 101vw;
+  }
+
+  .glasskey {
+    position: static;
+    width: 10vw;
   }
 
   .securitybar {
