@@ -427,6 +427,10 @@ body {
     grid-column: auto;
   }
 
+  .longfence {
+    position: static;
+    width: 85vw;
+  }
  
   .glassrailing {
     position: static;
