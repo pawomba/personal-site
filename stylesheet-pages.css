@@ -71,6 +71,28 @@ a:hover {
 
 /* page styles */
 
+/* railing */
+
+#railing img {
+  margin: px;
+}
+
+body#railing main {
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 5vw 90vw 10vw;
+  grid-template-areas:
+    ". r1 ."
+    ". r2 ."
+}
+
+.r1 {
+  grid-area: r1;
+}
+
+.r2 {
+  grid-area: r2;
+}
 
 /* ceiling */
 
@@ -461,12 +483,11 @@ body#fence main {
 body#nails main {
   width: 850px;
   margin: auto;
-  display: grid;
-  justify-items: center;
   grid-template-columns: repeat(1, 1fr);
   grid-template-areas:
     "n1"
-    "n2";
+    "n2"
+    "n3";
 }
 
 .n1 {
@@ -474,6 +495,10 @@ body#nails main {
 }
 
 .n2 {
+  grid-area: n2;
+}
+
+.n3 {
   grid-area: n2;
 }
 
@@ -490,7 +515,8 @@ body#rocking main {
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
     "r1 r3"
-    "r2 .";
+    "r2 ."
+    "r4 .";
 }
 
 .r1 {
@@ -503,6 +529,10 @@ body#rocking main {
 
 .r3 {
   grid-area: r3;
+}
+
+.r4 {
+  grid-area: r4;
 }
 
 /* key */
