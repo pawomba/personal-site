@@ -249,30 +249,26 @@ body#door main {
 
 /* long fence */
 
-/* #longfence img {
-  margin: px;
-}
-
 body#longfence main {
-  margin: 20px;
-  display: grid;
-  grid-template-columns: 15vw 30vw 10vw 30vw 15vw;
-  grid-template-areas:
-    " f1 f1 f1 f2 f2"
-    "f3 . . . .";
+  margin: 5px;
+    display: grid;
+    grid-template-columns: 33.45vw 29vw 0.5vw 35.1vw 11vw;
+    grid-template-areas:
+        "lf1 lf1 . . ."
+        "lf1 lf1 . lf2 ."
+        "lf3 . . . .";}
+
+.lf1 {
+  grid-area: lf1;
 }
 
-.longfence1 {
-  grid-area: f1;
+.lf2 {
+  grid-area: lf2;
 }
 
-.longfence2 {
-  grid-area: f2;
+.lf3 {
+  grid-area: lf3;
 }
-
-.longfence3 {
-  grid-area: f3;
-} */
 
 
 /* bench */
@@ -645,6 +641,7 @@ body#spiral main {
 
 @media only screen and (max-width: 600px) {
 
+  body#longfence main,
   body#securitybar main,
   body#ibeam main,
   body#glassrailing main,
