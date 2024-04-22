@@ -142,18 +142,6 @@ body#ceiling main {
 
 /* turnstile */
 
-body#turnstile main {
-  margin: 0px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas:
-    ". f1 f1"
-    ". f1 f1";
-}
-
-.f1 {
-  grid-area: f1;
-}
 
 /* securitybar */
 
