@@ -100,11 +100,24 @@ body {
   align-items: center;
 }
 
+/* turnstile  */
+.turnstile {
+  width: 17vw;
+  position: absolute;
+  top: 53vh;
+  left: 16vw;
+}
+
+.turnstile:hover {
+  transform: translateX(-20);
+  transition: .5s ease;
+}
+
 /* securitybar */
 .securitybar {
   width: 3.5vw;
   position: absolute;
-  top: 65vh;
+  top: 20vh;
   left: 56vw;
 }
 
@@ -118,8 +131,8 @@ body {
 .glasskey {
   width: 2vw;
   position: absolute;
-  top: 86vh;
-  left: 64vw;
+  top: 16vh;
+  left: 105vw;
   transform: rotate(-60deg);
 }
 
@@ -235,10 +248,10 @@ body {
 
 /* fence  */
 .fence {
-  width: 20vw;
+  width: 19vw;
   position: absolute;
-  top: 53vh;
-  left: 20vw;
+  top: 62vh;
+  left: 46vw;
 }
 
 .fence:hover {
@@ -441,6 +454,12 @@ body {
     align-items: center;
     height: 80vh;
     grid-column: auto;
+
+  }
+
+  .turnstile {
+    position: static;
+    width: 55vw;
   }
 
   .longfence {
